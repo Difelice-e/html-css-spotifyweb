@@ -9,14 +9,32 @@
     <link rel="stylesheet" href="style.css">
     <title>SpotifyWeb</title>
 </head>
-<body class="debug">
+<body class="debu">
     <header class="cmd-wrapper">
         <!-- BARRA DEI COMANDI -->
-        <div class="cmd__widget cmd__info">
+        <div class="cmd__widget">
             <!-- WIDGET INFO SONG  -->
+            <div class="song-wrapper">
+                <div class="song-cover">
+                    <img src="img/sinister.jpeg" alt="">
+                </div>
+
+                <div class="song-info">
+                    <h3 class="song-title">Sinister</h3>
+                    <p class="song-artist">Brand Nome</p>
+                </div>
+            </div>
+
+            <div class="song-cmd">
+                <ul>
+                    <li class="icon"><a href="#"><i class="far fa-heart"></i></a></li>
+                    <li class="icon"><a href="#"><i class="far fa-folder"></i></a></li>
+                </ul>
+            </div>
         </div>
 
         <div class="cmd__main">
+            <!-- CONTROLLI AUDIO + TIMEBAR  -->
             <div class="cmd-main__audio">
                 <ul>
                     <li class="icon"><a href="#"><i class="fas fa-random"></i></a></li>
@@ -44,8 +62,20 @@
             </div>
         </div>
 
-        <div class="cmd__widget cmd__audio">
+        <div class="cmd__audio">
             <!-- WIDGET COMANDI SONG  -->
+            <ul>
+                <li class="icon"><a href="#"><i class="fas fa-list-ul"></i></a></li>
+                <li class="icon"><a href="#"><i class="fas fa-tv"></i></a></li>
+                <li class="icon"><a href="#"><i class="fas fa-volume-up"></i></a></li>
+                <li class="cmd__volume">
+                    <div class="timebar-wrapper">
+                        <div class="timebar-progression">
+                            <div class="timebar-pointer"></div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
     </header>
 

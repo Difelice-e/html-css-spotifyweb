@@ -10,6 +10,7 @@ ul{
   
 img{
     max-width: 100%;
+    display: block;
 }
 
 a{
@@ -25,7 +26,7 @@ body{
 }
 
 header{
-    min-height: 88px;
+    /* min-height: 88px; */
     background-color: #282828;
 }
 
@@ -47,9 +48,45 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px;
+    padding: 10px;
 }
 
+
+/* SEZIONE DI SINISTRA - CMD__WIDGET CMD_INFO */
+.cmd__widget {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.song-wrapper, .song-cmd {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.song-cover {
+    width: 50px;
+}
+
+.song-title {
+    color: white;
+    font-size: 1rem;
+}
+
+.song-artist {
+    color: #777777;
+    font-size: 0.8rem;
+}
+
+.song-cmd ul {
+    display: contents;
+}
+
+.song-cmd .icon {
+    color: #7C7C7C;
+    font-size: 1.2rem;
+}
 
 
 /* SEZIONE CENTRALE - CMD__MAIN  */
@@ -127,6 +164,26 @@ main{
     transform: translate(50%, -25%);
 }
 
+/* SEZIONE DI DESTRA - CMD_AUDIO  */
+.cmd__audio {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cmd__audio ul {
+    display: contents;
+}
+
+.cmd__audio .icon {
+    color: white;
+    font-size: 0.8rem;
+}
+
+.cmd__volume {
+    width: 120px;
+}
+
 
 
 
@@ -169,7 +226,7 @@ main{
     border: 2px dashed #00A2D6;
 }
 
-.debug .cmd__widget, .debug .cmd__main {
+.debug .cmd__widget, .debug .cmd__main, .debug .cmd__audio {
     border: 2px dashed #FFA800;
     height: 100%;
     min-width: 150px;
@@ -181,5 +238,4 @@ main{
 
 .debug .cmd-main__timebar {
     border: 2px solid #7774FF;
-    height: 50%;
 }
