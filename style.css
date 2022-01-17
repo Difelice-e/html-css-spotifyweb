@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style-type: none;
+  }
+  
+img{
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+/* LAYOUT  */
+body{
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-grow: 1;
+}
