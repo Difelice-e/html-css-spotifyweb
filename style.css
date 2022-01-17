@@ -26,6 +26,7 @@ body{
 
 header{
     min-height: 88px;
+    background-color: #282828;
 }
 
 main{
@@ -40,6 +41,111 @@ main{
 .main-container{
     flex-grow: 1;
 }
+
+/* ----- BARRA DEI COMANDI ----- */
+.cmd-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+
+
+/* SEZIONE CENTRALE - CMD__MAIN  */
+.cmd__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cmd-main__audio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.cmd-main__audio ul {
+    display: contents;
+}
+
+.cmd-main__audio .icon {
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+.cmd-main__audio .icon-xl {
+    font-size: 35px;
+    padding: 0 20px;
+}
+
+/* TIMEBAR  */
+.cmd-main__timebar {
+    display: flex;
+    align-items: center;
+    width: 50vw;
+    gap: 20px;
+    color: white;
+    padding: 5px 0;
+}
+
+.timebar-wrapper {
+    flex-grow: 1;
+    flex-shrink: 1;
+    height: 8px;
+    width: 100%;
+    background-color: #5B5B5B;
+    border-radius: 999px;
+}
+
+.timebar-wrapper:hover .timebar-progression {
+    background-color: green;
+}
+
+.timebar-wrapper:hover .timebar-pointer {
+    display: block;
+}
+
+.timebar-progression {
+    width: 25%;
+    height: 8px;
+    background-color: #C5C5C5;
+    border-radius: 999px;
+    z-index: 999;
+    position: relative;
+}
+
+.timebar-pointer {
+    display: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    transform: translate(50%, -25%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* DEBUG  */
@@ -57,4 +163,23 @@ main{
 
 .debug .main-container {
     border: 5px solid #FF09E6;
+}
+
+.debug .cmd-wrapper {
+    border: 2px dashed #00A2D6;
+}
+
+.debug .cmd__widget, .debug .cmd__main {
+    border: 2px dashed #FFA800;
+    height: 100%;
+    min-width: 150px;
+}
+
+.debug .cmd-main__audio {
+    border: 2px solid #00A2D6;
+}
+
+.debug .cmd-main__timebar {
+    border: 2px solid #7774FF;
+    height: 50%;
 }

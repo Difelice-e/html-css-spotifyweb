@@ -10,16 +10,50 @@
     <title>SpotifyWeb</title>
 </head>
 <body class="debug">
-    <header>
+    <header class="cmd-wrapper">
         <!-- BARRA DEI COMANDI -->
-        
+        <div class="cmd__widget cmd__info">
+            <!-- WIDGET INFO SONG  -->
+        </div>
+
+        <div class="cmd__main">
+            <div class="cmd-main__audio">
+                <ul>
+                    <li class="icon"><a href="#"><i class="fas fa-random"></i></a></li>
+                    <li class="icon"><a href="#"><i class="fas fa-step-backward"></i></a></li>
+                    <li class="icon icon-xl"><a href="#"><i class="far fa-play-circle"></i></a></li>
+                    <li class="icon"><a href="#"><i class="fas fa-step-forward"></i></a></li>
+                    <li class="icon"><a href="#"><i class="fas fa-redo-alt"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="cmd-main__timebar">
+                <div class="time">
+                    0:25
+                </div>
+
+                <div class="timebar-wrapper">
+                    <div class="timebar-progression">
+                        <div class="timebar-pointer"></div>
+                    </div>
+                </div>
+
+                <div class="time">
+                    4:35
+                </div>
+            </div>
+        </div>
+
+        <div class="cmd__widget cmd__audio">
+            <!-- WIDGET COMANDI SONG  -->
+        </div>
     </header>
 
     <main>
         <!-- SEZIONE PRINCIPALE -->
         
         <nav class="sidebar">
-
+            <!-- SIDEBAR  -->
         </nav>
 
         <section class="main-container">
