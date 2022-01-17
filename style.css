@@ -1,4 +1,4 @@
-* {
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -12,7 +12,7 @@ img{
     max-width: 100%;
 }
 
-a {
+a{
     text-decoration: none;
     color: currentColor;
 }
@@ -24,7 +24,37 @@ body{
     height: 100vh;
 }
 
-main {
+header{
+    min-height: 88px;
+}
+
+main{
     display: flex;
     flex-grow: 1;
+}
+
+.sidebar{
+    width: 230px;
+}
+
+.main-container{
+    flex-grow: 1;
+}
+
+
+/* DEBUG  */
+.debug header {
+    border: 5px solid #27D0B2;
+}
+
+.debug main {
+    border: 5px solid #00A2D6;
+}
+
+.debug .sidebar {
+    border: 5px solid #FFA800;
+}
+
+.debug .main-container {
+    border: 5px solid #FF09E6;
 }
