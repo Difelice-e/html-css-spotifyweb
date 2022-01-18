@@ -375,6 +375,27 @@ main{
     color: white;
 }
 
+/* ----- MAIN CONTAINER ----- */
+
+
+
+/* UPGRADE SECTION  */
+.upgrade-cta {
+    text-transform: uppercase;
+    color: white;
+    border: 1px solid white;
+    border-radius: 100px;
+    padding: 10px 40px;
+    display: inline-block;
+    position: absolute;
+    right: 30px;
+    top: 0;
+    transform: translateY(50%);
+}
+
+.upgrade-cta:hover {
+    transform: translateY(50%) scale(1.1);
+}
 
 
 
