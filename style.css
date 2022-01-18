@@ -27,7 +27,6 @@ body{
 }
 
 header{
-    /* min-height: 88px; */
     background-color: #282828;
 }
 
@@ -54,10 +53,10 @@ main{
 .upgrade {
     min-height: 90px;
     background-color: rgba(0, 0, 0, 0.3);
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
-    width: 100%;
+    width: calc(100% - 230px);
 }
 
 /* ----- BARRA DEI COMANDI ----- */
@@ -235,6 +234,11 @@ main{
 }
 
 /* ----- SIDEBAR -----  */
+.sidebar-main {
+    overflow-y: scroll;
+    max-height: calc(100vh - 71px - 92px);
+}
+
 .logo-wrapper {
     width: 140px;
     margin-bottom: 33px;
