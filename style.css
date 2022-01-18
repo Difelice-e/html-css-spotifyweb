@@ -37,10 +37,25 @@ main{
 
 .sidebar{
     width: 230px;
+    background-color: black;
+    position: relative;
 }
 
 .main-container{
     flex-grow: 1;
+    background-color: #141922;
+    overflow-y: scroll;
+    padding-top: 120px;
+    position: relative;
+}
+
+.upgrade {
+    min-height: 90px;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
 }
 
 /* ----- BARRA DEI COMANDI ----- */
@@ -217,6 +232,54 @@ main{
     width: 40%;
 }
 
+/* ----- SIDEBAR -----  */
+
+
+
+
+
+
+/* USER-INFO  */
+.user-info {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    padding: 5px 15px;
+}
+
+.install-cta {
+    color: #696969;
+    padding-bottom: 8px;
+    font-size: 0.7rem;
+    border-bottom: 1px solid #696969;
+}
+
+.install-cta i {
+    margin-right: 10px;
+}
+
+.user-profile {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 13px 0 0px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.user-img-wrapper {
+    width: 20px;
+    height: 20px;
+    background-color: #808080;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.user-img {
+    width: 20px;
+}
 
 
 
