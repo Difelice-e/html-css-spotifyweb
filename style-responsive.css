@@ -26,6 +26,10 @@
         width: calc(100% - 4rem);
     }
 
+    .main-nav.active::before {
+        display: none;
+    }
+
     .install-cta {
         border-bottom: none;
     }
