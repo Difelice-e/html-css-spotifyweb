@@ -88,37 +88,40 @@
         
         <nav class="sidebar">
             <!-- SIDEBAR  -->
-            <div class="sidebar-main">
                 <!-- MENU SIDEBAR -->
                 <div class="logo-wrapper">
-                    <img src="img/logo.svg">
+                    <img class="logo-l" src="img/logo.svg">
+                    <img class="logo-s" src="img/logo-small.svg">
                 </div>
 
                 <div class="sidebar-menu">
                     <ul class="main-nav-wrapper">
                         <li class="main-nav">
                             <a href="#"><i class="fas fa-home icon"></i></a>
-                            <a href="#">Home</a>
+                            <a class="nav-title" href="#">Home</a>
                         </li>
 
-                        <li class="main-nav"><a href="#"><i class="fas fa-search icon"></i></a> 
-                            <a href="#">Cerca</a>
+                        <li class="main-nav">
+                            <a href="#"><i class="fas fa-search icon"></i></a> 
+                            <a class="nav-title" href="#">Cerca</a>
                         </li>
 
-                        <li class="main-nav"><a href="#"><i class="fas fa-book icon"></i></a>
-                           <a href="">La tua libreria</a>
+                        <li class="main-nav">
+                            <a href="#"><i class="fas fa-book icon"></i></a>
+                            <a class="nav-title" href="">La tua libreria</a>
                         </li>
                     </ul>
-                </div>
+                
 
-                <div class="sidebar-menu">
+                
                     <h3 class="sidebar-menu-title">Playlist</h3>
+            
+                    <div class="new-playlist">
+                        <a href="#"><i class="fas fa-plus-square icon-xl"></i></a>
+                        <a href="#">Crea Playlist</a>
+                    </div>
                     
                     <ul class="playlist">
-                        <li class="new-playlist">
-                            <a href="#"><i class="fas fa-plus-square icon-xl"></i></a>
-                            <a href="#">Crea Playlist</a>
-                        </li>
                         <li class="playlist-name"><a href="#">Nome Playlist</a></li>
                         <li class="playlist-name"><a href="#">Nome Playlist</a></li>
                         <li class="playlist-name"><a href="#">Nome Playlist</a></li>
@@ -128,15 +131,19 @@
                         <li class="playlist-name"><a href="#">Nome Playlist</a></li>
                     </ul>
                 </div>
-            </div>
+            
 
             <div class="user-info">
                 <!-- USER INFO  -->
                 <ul>
-                    <li class="install-cta"><a href="#"><i class="far fa-arrow-alt-circle-down"></i>Installa app</a></li>
+                    <li class="install-cta">
+                        <a href="#"><i class="far fa-arrow-alt-circle-down"></i></a>
+                        <a class="nav-title" href="#">Installa app</a>
+                    </li>
+
                     <li class="user-profile">
                         <div class="user-img-wrapper"><img class="user-img" src="img/profile.svg"></div>
-                        <a href="#">John Doe</a>
+                        <a class="nav-title" href="#">John Doe</a>
                     </li>
                 </ul>
             </div>

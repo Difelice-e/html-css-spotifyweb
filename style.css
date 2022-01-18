@@ -28,18 +28,12 @@ body{
 
 header{
     background-color: #282828;
+    z-index: 999;
 }
 
 main{
     display: flex;
     flex-grow: 1;
-}
-
-.sidebar{
-    width: 230px;
-    background-color: black;
-    position: relative;
-    padding: 15px 20px 5px;
 }
 
 .main-container{
@@ -57,6 +51,7 @@ main{
     top: 0;
     right: 0;
     width: calc(100% - 230px);
+    z-index: 9999;
 }
 
 /* ----- BARRA DEI COMANDI ----- */
@@ -234,14 +229,22 @@ main{
 }
 
 /* ----- SIDEBAR -----  */
-.sidebar-main {
-    overflow-y: scroll;
-    max-height: calc(100vh - 71px - 92px);
+.sidebar{
+    width: 230px;
+    background-color: black;
+    position: relative;
+    max-height: calc(100vh - 92px);
+    overflow-y: hidden;
 }
 
 .logo-wrapper {
-    width: 140px;
-    margin-bottom: 33px;
+    width: 180px;
+    margin-bottom: 15px;
+    padding: 15px 20px;
+}
+
+.logo-s {
+    display: none;
 }
 
 .sidebar-menu {
@@ -249,7 +252,7 @@ main{
     display: flex;
     flex-direction: column;
     gap: 15px;
-    margin-bottom: 25px;
+    padding: 0 20px;
 }
 
 .main-nav-wrapper {
@@ -271,11 +274,14 @@ main{
     text-transform: uppercase;
     color: white;
     font-size: 1rem;
-    margin-bottom: -5px;
+    margin: 10px 0 -5px;
 }
 
 .playlist {
-    display: contents;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .playlist-name {
@@ -288,19 +294,20 @@ main{
     gap: 10px;
 }
 
-.playlist .icon-xl {
+.new-playlist .icon-xl {
     font-size: 50px;
 }
 
 
 /* USER-INFO  */
 .user-info {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 100%;
+    position: fixed;
+    bottom: 92px;
+    left: 0;
+    width: 230px;
     padding: 5px 20px;
     background-color: black;
+    z-index: 999;
 }
 
 .install-cta {
@@ -387,4 +394,12 @@ main{
 
 .debug .cmd-main__timebar {
     border: 2px solid #7774FF;
+}
+
+.debug .logo-wrapper, .debug .sidebar-menu, .debug .user-info {
+    border: 1px dashed white;
+}
+
+.debug .main-nav-wrapper, .debug .playlist {
+    border: 2px dashed green;
 }
