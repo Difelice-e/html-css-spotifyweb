@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 ul{
@@ -39,6 +40,7 @@ main{
     width: 230px;
     background-color: black;
     position: relative;
+    padding: 15px 20px 5px;
 }
 
 .main-container{
@@ -233,10 +235,58 @@ main{
 }
 
 /* ----- SIDEBAR -----  */
+.logo-wrapper {
+    width: 140px;
+    margin-bottom: 33px;
+}
 
+.sidebar-menu {
+    color: #717171;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+}
 
+.main-nav-wrapper {
+    display: contents;
+}
 
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
 
+.main-nav-wrapper .icon{
+    font-size: 1.4rem;
+}
+
+/* PLAYLIST */
+.sidebar-menu-title {
+    text-transform: uppercase;
+    color: white;
+    font-size: 1rem;
+    margin-bottom: -5px;
+}
+
+.playlist {
+    display: contents;
+}
+
+.playlist-name {
+    font-size: 0.9rem;
+}
+
+.new-playlist {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.playlist .icon-xl {
+    font-size: 50px;
+}
 
 
 /* USER-INFO  */
@@ -245,13 +295,14 @@ main{
     bottom: 0;
     right: 0;
     width: 100%;
-    padding: 5px 15px;
+    padding: 5px 20px;
+    background-color: black;
 }
 
 .install-cta {
     color: #696969;
     padding-bottom: 8px;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     border-bottom: 1px solid #696969;
 }
 
@@ -265,20 +316,20 @@ main{
     align-items: center;
     gap: 10px;
     margin: 13px 0 0px;
-    font-size: 0.8rem;
-    font-weight: 600;
+    font-size: 0.9rem;
+    font-weight: 500;
 }
 
 .user-img-wrapper {
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     background-color: #808080;
     border-radius: 50%;
     overflow: hidden;
 }
 
 .user-img {
-    width: 20px;
+    width: 24px;
 }
 
 
