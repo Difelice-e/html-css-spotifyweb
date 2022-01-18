@@ -265,6 +265,26 @@ main{
     gap: 5px;
 }
 
+.main-nav:hover {
+    color: white;
+}
+
+.main-nav.active {
+    color: white;
+    position: relative;
+}
+
+.main-nav.active::before {
+    content: '';
+    display: block;
+    height: 33px;
+    width: 4px;
+    background-color: green;
+    position: absolute;
+    left: -20px;
+    top: -5px;
+}
+
 .main-nav-wrapper .icon{
     font-size: 1.4rem;
 }
@@ -288,10 +308,18 @@ main{
     font-size: 0.9rem;
 }
 
+.playlist-name:hover {
+    color: white;
+}
+
 .new-playlist {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+.new-playlist:hover {
+    color: white;
 }
 
 .new-playlist .icon-xl {
@@ -343,6 +371,9 @@ main{
     width: 24px;
 }
 
+.nav-title:hover {
+    color: white;
+}
 
 
 
