@@ -34,13 +34,14 @@ header{
 main{
     display: flex;
     height: calc(100vh - 92px);
+    overflow: hidden;
 }
 
 .main-container{
     flex-grow: 1;
     background-color: #141922;
     overflow-y: scroll;
-    padding-top: 120px;
+    padding-top: 90px;
     position: relative;
 }
 
@@ -266,12 +267,12 @@ main{
     color: white;
 }
 
-.main-nav.active {
+.main-nav.active, .main-nav:active  {
     color: white;
     position: relative;
 }
 
-.main-nav.active::before {
+.main-nav.active::before, .main-nav:active::before {
     content: '';
     display: block;
     height: 33px;
@@ -376,8 +377,6 @@ main{
 
 /* ----- MAIN CONTAINER ----- */
 
-
-
 /* UPGRADE SECTION  */
 .upgrade-cta {
     text-transform: uppercase;
@@ -396,8 +395,71 @@ main{
     transform: translateY(50%) scale(1.1);
 }
 
+/* MUSIC WRAPPER  */
+.category-menu {
+    color: #808080;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
 
+.category-name {
+    white-space: nowrap;
+    padding: 15px 0;
+}
 
+.category-name:hover {
+    color: white;
+}
+
+.category-name.active, .category-name:active {
+    position: relative;
+}
+
+.category-name.active:after, .category-name:active::after {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 50px;
+    background-color: green;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,-100%);
+}
+
+.song-section-wrapper {
+    padding: 20px 20px;
+}
+
+.song-section {
+    display: flex;
+    gap: 0px 10px;
+    justify-content: space-between;
+}
+
+.song-section-title {
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* SONG CARD */
+.song-cover-wrapper {
+    max-width: 200px;
+}
+
+.song-card-title {
+    color: white;
+    text-align: center;
+}
+
+.song-card-artist {
+    color: #808080;
+    text-align: center;
+}
 
 
 
