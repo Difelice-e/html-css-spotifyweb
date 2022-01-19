@@ -233,7 +233,7 @@ main{
 
 /* ----- SIDEBAR -----  */
 .sidebar{
-    width: 230px;
+    min-width: 230px;
     background-color: black;
     position: relative;
     overflow-y: hidden;
@@ -438,27 +438,39 @@ main{
 .song-section {
     display: flex;
     gap: 0px 10px;
-    justify-content: space-between;
+    justify-content: flex-start;
+    padding: 25px 0;
 }
 
 .song-section-title {
     color: white;
-    margin-bottom: 20px;
+}
+
+.song-section-subtitle {
+    color: #808080;
+    margin-top: 10px;
 }
 
 /* SONG CARD */
-.song-cover-wrapper {
-    max-width: 200px;
+.song-card-wrapper {
+    width: 16%;
+    max-width: 300px;
 }
 
 .song-card-title {
     color: white;
     text-align: center;
+    padding: 15px 0;
 }
 
 .song-card-artist {
     color: #808080;
     text-align: center;
+}
+
+.song-cover-wrapper.artist-wrapper {
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 

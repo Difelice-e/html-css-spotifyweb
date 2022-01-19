@@ -16,11 +16,12 @@
 @media screen and  (max-width:550px) {
     /* sidebar responsive */
     .sidebar {
-        max-width: 64px;
+        min-width: 64px;
     }
 
     .logo-wrapper {
         padding: 5px 0;
+        max-width: 30px;
     }
     
     .logo-s {
