@@ -277,7 +277,7 @@ main{
     display: block;
     height: 33px;
     width: 4px;
-    background-color: green;
+    background-color: #BCFF30;
     position: absolute;
     left: -20px;
     top: -5px;
@@ -424,7 +424,7 @@ main{
     display: block;
     height: 4px;
     width: 50px;
-    background-color: green;
+    background-color: #BCFF30;
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -468,9 +468,34 @@ main{
     text-align: center;
 }
 
+.song-cover-wrapper {
+    position: relative;
+}
+
+.song-cover-wrapper:hover .song-card-overlay {
+    display: flex;
+}
+
 .song-cover-wrapper.artist-wrapper {
     border-radius: 50%;
     overflow: hidden;
+}
+
+.song-card-overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.song-card-overlay i {
+    color: white;
+    font-size: 5vw;
 }
 
 
