@@ -10,7 +10,7 @@ ul{
   }
   
 img{
-    max-width: 100%;
+    width: 100%;
     display: block;
 }
 
@@ -33,7 +33,7 @@ header{
 
 main{
     display: flex;
-    flex-grow: 1;
+    height: calc(100vh - 92px);
 }
 
 .main-container{
@@ -66,7 +66,7 @@ main{
 /* SEZIONE DI SINISTRA - CMD__WIDGET CMD_INFO */
 .cmd__widget {
     display: flex;
-    gap: 35px;
+    gap:35px;
     align-items: center;
 }
 
@@ -78,6 +78,7 @@ main{
 
 .song-cover {
     width: 35px;
+    flex-shrink: 0;
 }
 
 .song-title {
@@ -221,6 +222,7 @@ main{
 
 .cmd__volume {
     width: 105px;
+    flex-grow: 1;
 }
 
 .cmd__volume .timebar-progression{
@@ -233,26 +235,21 @@ main{
     width: 230px;
     background-color: black;
     position: relative;
-    max-height: calc(100vh - 92px);
     overflow-y: hidden;
-}
-
-.logo-wrapper {
-    width: 180px;
-    margin-bottom: 15px;
-    padding: 15px 20px;
-}
-
-.logo-s {
-    display: none;
-}
-
-.sidebar-menu {
     color: #717171;
     display: flex;
     flex-direction: column;
     gap: 15px;
     padding: 0 20px;
+}
+
+.logo-wrapper {
+    max-width: 135px;
+    padding: 25px 0 10px;
+}
+
+.logo-s {
+    display: none;
 }
 
 .main-nav-wrapper {
@@ -287,9 +284,14 @@ main{
 
 .main-nav-wrapper .icon{
     font-size: 1.4rem;
+    width: 1.5rem;
 }
 
 /* PLAYLIST */
+.playlist-wrapper {
+    display: contents;
+}
+
 .sidebar-menu-title {
     text-transform: uppercase;
     color: white;
@@ -298,10 +300,11 @@ main{
 }
 
 .playlist {
-    overflow-y: auto;
     display: flex;
     flex-direction: column;
     gap: 15px;
+    flex-grow: 1;
+    overflow-y: auto;
 }
 
 .playlist-name {
@@ -329,11 +332,7 @@ main{
 
 /* USER-INFO  */
 .user-info {
-    position: fixed;
-    bottom: 92px;
-    left: 0;
-    width: 230px;
-    padding: 5px 20px;
+    padding-bottom: 5px;
     background-color: black;
     z-index: 999;
 }

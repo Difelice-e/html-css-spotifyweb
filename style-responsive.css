@@ -6,7 +6,7 @@
     } 
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:650px) {
     .song-cmd {
         flex-direction: column;
         gap: 0px;
@@ -14,20 +14,44 @@
 }
 
 @media screen and  (max-width:550px) {
+    /* sidebar responsive */
     .sidebar {
-        width: 4rem;
+        max-width: 64px;
+    }
+
+    .logo-wrapper {
+        padding: 5px 0;
+    }
+    
+    .logo-s {
+        display: block;
+    }
+    
+    .logo-l {
+        display: none;
+    }
+
+    .main-nav-wrapper {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .main-nav.active::before {
+        display: none;
+    }
+    
+    .nav-title {
+        display: none;
+    }
+    
+    .playlist-wrapper{
+        display: none;
     }
 
     .user-info {
-        width: 4rem;
-    }
-
-    .upgrade {
-        width: calc(100% - 4rem);
-    }
-
-    .main-nav.active::before {
-        display: none;
+        width: 1.5rem;
     }
 
     .install-cta {
@@ -37,36 +61,13 @@
     .install-cta i {
         margin-left: 5px;
     }
-    
-    .nav-title {
-        display: none;
-    }
 
-    .logo-wrapper {
-        margin-bottom: 0px;
+    /* upgrade section responsive */
+    .upgrade {
+        width: calc(100% - 4rem);
     }
     
-    .logo-s {
-        display: block;
-        width: 1.5rem;
-    }
-    
-    .logo-l {
-        display: none;
-    }
-    
-    .sidebar-menu-title{
-        display: none;
-    }
-    
-    .new-playlist {
-        display: none;
-    }
-
-    .playlist {
-        display: none;
-    }
-    
+    /* barra dei comandi responsive  */
     .cmd__widget {
         gap: 12px;
     }
