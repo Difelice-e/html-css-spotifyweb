@@ -90,6 +90,7 @@ main{
 .song-artist {
     color: #777777;
     font-size: 0.7rem;
+    transition: 500ms;
 }
 
 .song-artist:hover {
@@ -104,6 +105,7 @@ main{
 .song-cmd .icon {
     color: #7C7C7C;
     font-size: 1rem;
+    transition: 500ms;
 }
 
 .song-cmd .icon:hover {
@@ -137,6 +139,7 @@ main{
 .cmd-main__audio .icon-xl {
     font-size: 1.8rem;
     padding: 0 5px;
+    transition: 500ms;
 }
 
 .cmd-main__audio .icon-xl:hover {
@@ -285,6 +288,7 @@ main{
 
 .main-nav-wrapper .icon{
     font-size: 1.5rem;
+    transition: 500ms;
 }
 
 /* PLAYLIST */
@@ -309,6 +313,7 @@ main{
 
 .playlist-name {
     font-size: 0.9rem;
+    transition: 500ms;
 }
 
 .playlist-name:hover {
@@ -319,6 +324,7 @@ main{
     display: flex;
     align-items: center;
     gap: 10px;
+    transition: 500ms;
 }
 
 .new-playlist:hover {
@@ -370,6 +376,10 @@ main{
     width: 26px;
 }
 
+.nav-title {
+    transition: 500ms;
+}
+
 .nav-title:hover {
     color: white;
 }
@@ -388,6 +398,7 @@ main{
     right: 30px;
     top: 0;
     transform: translateY(50%);
+    transition: 500ms;
 }
 
 .upgrade-cta:hover {
@@ -403,11 +414,13 @@ main{
     align-items: center;
     gap: 15px;
     flex-wrap: wrap;
+    padding: 0 5px;
 }
 
 .category-name {
     white-space: nowrap;
     padding: 15px 0;
+    transition: 500ms;
 }
 
 .category-name:hover {
@@ -453,7 +466,7 @@ main{
 
 /* SONG CARD */
 .song-card-wrapper {
-    width: 15%;
+    width: 15.2%;
     max-width: 300px;
     padding: 5px 0;
 }
@@ -462,6 +475,10 @@ main{
     color: white;
     text-align: center;
     padding: 15px 0;
+}
+
+.song-card-title:hover {
+    text-decoration: underline;
 }
 
 .song-card-artist {
@@ -474,7 +491,7 @@ main{
 }
 
 .song-cover-wrapper:hover .song-card-overlay {
-    display: flex;
+    opacity: 1;
 }
 
 .song-cover-wrapper.artist-wrapper {
@@ -484,19 +501,25 @@ main{
 
 .song-card-overlay {
     background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
     position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
     left: 0;
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
+    transition: 500ms;
 }
 
 .song-card-overlay i {
     color: white;
     font-size: calc(5vw + 20px);
+}
+
+.play-icon-hover {
+    width: 40%;
 }
 
 
