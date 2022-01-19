@@ -284,8 +284,7 @@ main{
 }
 
 .main-nav-wrapper .icon{
-    font-size: 1.4rem;
-    width: 1.5rem;
+    font-size: 1.5rem;
 }
 
 /* PLAYLIST */
@@ -341,7 +340,7 @@ main{
 .install-cta {
     color: #696969;
     padding-bottom: 8px;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     border-bottom: 1px solid #696969;
 }
 
@@ -355,20 +354,20 @@ main{
     align-items: center;
     gap: 10px;
     margin: 13px 0 0px;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 500;
 }
 
 .user-img-wrapper {
-    width: 24px;
-    height: 24px;
+    width: 26px;
+    height: 26px;
     background-color: #808080;
     border-radius: 50%;
     overflow: hidden;
 }
 
 .user-img {
-    width: 24px;
+    width: 26px;
 }
 
 .nav-title:hover {
@@ -439,6 +438,7 @@ main{
     display: flex;
     gap: 0px 10px;
     justify-content: flex-start;
+    flex-wrap: wrap;
     padding: 25px 0;
 }
 
@@ -453,8 +453,9 @@ main{
 
 /* SONG CARD */
 .song-card-wrapper {
-    width: 16%;
+    width: 15%;
     max-width: 300px;
+    padding: 5px 0;
 }
 
 .song-card-title {
@@ -495,7 +496,7 @@ main{
 
 .song-card-overlay i {
     color: white;
-    font-size: 5vw;
+    font-size: calc(5vw + 20px);
 }
 
 
