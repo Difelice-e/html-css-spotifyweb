@@ -557,6 +557,7 @@ main{
     width: calc(93% / 8);
     position: relative;
     flex-shrink: 0;
+    padding: 5px 5px 0;
 }
 
 .song-card-wrapper:hover {
