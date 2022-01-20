@@ -21,7 +21,7 @@
         width: calc(95% / 6);
     }
 
-    .song-section::after {
+    .song-section:first-child::after {
         content: '';
         display: block;
         background-color: #141922;
@@ -40,7 +40,7 @@
         justify-content: flex-start;
     }
 
-    .category-menu::after {
+    .category-menu:after {
         content: '';
         display: block;
         background-color: black;
