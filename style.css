@@ -29,6 +29,7 @@ body{
 header{
     background-color: #282828;
     z-index: 999;
+    overflow-x: hidden;
 }
 
 main{
@@ -54,6 +55,25 @@ main{
     width: calc(100% - 230px);
     z-index: 9999;
 }
+
+ /* SCROLL-BAR STYLE */ 
+ ::-webkit-scrollbar { 
+    width: 5px;
+  } 
+
+  ::-webkit-scrollbar-thumb  { 
+    visibility: hidden; 
+    border-radius: 5px; 
+    background-color: #BCFF30;
+  } 
+
+  .playlist:hover::-webkit-scrollbar-thumb  { 
+    visibility:  visible;
+  }
+
+  .main-container:hover::-webkit-scrollbar-thumb  { 
+    visibility:  visible;
+  }
 
 /* ----- BARRA DEI COMANDI ----- */
 .cmd-wrapper {
@@ -169,7 +189,7 @@ main{
 }
 
 .timebar-wrapper:hover .timebar-progression {
-    background-color: green;
+    background-color: #BCFF30;
 }
 
 .timebar-wrapper:hover .timebar-pointer {
