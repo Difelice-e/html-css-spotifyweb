@@ -6,6 +6,16 @@
     } 
 }
 
+@media screen and (max-height: 180px) {
+    .upgrade {
+        display: none;
+    }
+
+    .main-container {
+        padding-top: 0;
+    }
+}
+
 @media screen and (max-width:878px) {
     .song-section {
         gap: 0 2%;
