@@ -16,6 +16,16 @@
     }
 }
 
+@media screen and (max-width:1600px) {
+    .song-card-wrapper {
+        width: calc(95% / 6);
+    }
+
+    .song-card-wrapper:nth-child(n+7) {
+        display: none;
+    }
+}
+
 @media screen and (max-width:878px) {
     .song-section {
         gap: 0 2%;
@@ -82,9 +92,9 @@
         gap: 0px;
     }
     
-    .main-nav.active::before {
+    .main-nav.active::before, .main-nav:active::before {
         display: none;
-    }
+    }  
     
     .nav-title {
         display: none;
