@@ -89,6 +89,7 @@ main{
     display: flex;
     gap:35px;
     align-items: center;
+    flex-shrink: 1;
 }
 
 .song-wrapper, .song-cmd {
@@ -113,6 +114,9 @@ main{
     color: #777777;
     font-size: 0.7rem;
     transition: 500ms;
+    /* overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; */
 }
 
 .song-artist:hover {
@@ -520,27 +524,43 @@ main{
 .song-card-wrapper {
     width: calc(93% / 8);
     padding: 5px 5px;
-    transition: ease-out 500ms;
+    
 }
 
 .song-card-wrapper:hover {
     background-color: rgba(255, 255, 255, 0.1);
+    transition: ease-out 500ms;
 }
 
 .song-card-title {
     color: white;
     text-align: center;
     padding: 15px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;  
 }
 
 .song-card-title:hover {
     text-decoration: underline;
+    overflow: visible;
+    text-overflow: unset;
+    white-space: normal;
 }
 
 .song-card-artist {
     color: #808080;
     text-align: center;
     cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.song-card-title:hover .song-card-artist {
+    overflow: visible;
+    text-overflow: unset;
+    white-space: normal;
 }
 
 .song-cover-wrapper {
