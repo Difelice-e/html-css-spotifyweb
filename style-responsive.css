@@ -126,15 +126,19 @@
         gap: 12px;
     }
 
+    .song-wrapper {
+        width: 72px;
+    }
+
     .cmd__audio {
-        gap: 8px;
+        /* gap: 8px; */
     }
 
     .cmd__audio .icon {
-        font-size: 0.75rem;;
+        /* font-size: 0.75rem; */
     }
 
     .cmd__volume {
-        width: 70px;
+        display: none;
     }
 }
