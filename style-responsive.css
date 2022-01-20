@@ -7,8 +7,12 @@
 }
 
 @media screen and (max-width:878px) {
+    .song-section {
+        gap: 0 2%;
+    }
+    
     .song-card-wrapper {
-        width: 23%;
+        width: calc(94% / 4)
     }
 }
 
@@ -18,8 +22,12 @@
         gap: 0px;
     }
 
+    .song-section {
+        gap: 0 4%;
+    }
+
     .song-card-wrapper {
-        width: 48%;
+        width: calc(96% / 2);
     }
 }
 
