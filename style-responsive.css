@@ -21,8 +21,36 @@
         width: calc(95% / 6);
     }
 
-    .song-card-wrapper:nth-child(n+7) {
-        display: none;
+    .song-section::after {
+        content: '';
+        display: block;
+        background-color: #141922;
+        box-shadow: 0 0 25px 10px #141922;
+        position: sticky;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 10px;
+        z-index: 999;
+    }
+}
+
+@media screen and (max-width:932px) {
+    .category-menu {
+        justify-content: flex-start;
+    }
+
+    .category-menu::after {
+        content: '';
+        display: block;
+        background-color: black;
+        box-shadow: 0 0 25px 10px black;
+        position: sticky;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 10px;
+        z-index: 999;
     }
 }
 
@@ -33,10 +61,6 @@
     
     .song-card-wrapper {
         width: calc(94% / 4)
-    }
-
-    .song-card-wrapper:nth-child(n+5) {
-        display: none;
     }
 }
 
@@ -54,8 +78,24 @@
         width: calc(96% / 2);
     }
 
-    .song-card-wrapper:nth-child(n+3) {
+    .cmd__widget {
+        gap: 10px;
+    }
+
+    .song-cmd {
         display: none;
+    }
+
+    .cmd__volume {
+        display: none;
+    }
+    
+    .song-wrapper {
+        width: 92px;
+    }
+
+    .cmd__volume {
+        width: 80px;
     }
 }
 
@@ -116,29 +156,27 @@
         margin-left: 5px;
     }
 
+    .song-section {
+        width: calc(100vw - 130px);
+    }
+
+    .category-menu {
+        width: calc(100vw - 110px);
+    }
+
     /* upgrade section responsive */
     .upgrade {
         width: calc(100% - 50px);
     }
     
     /* barra dei comandi responsive  */
+    .cmd-wrapper {
+        gap: 10px;
+    }
+    
     .cmd__widget {
         gap: 12px;
     }
 
-    .song-wrapper {
-        width: 72px;
-    }
-
-    .cmd__audio {
-        /* gap: 8px; */
-    }
-
-    .cmd__audio .icon {
-        /* font-size: 0.75rem; */
-    }
-
-    .cmd__volume {
-        display: none;
-    }
+    
 }

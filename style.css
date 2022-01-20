@@ -59,6 +59,7 @@ main{
  /* SCROLL-BAR STYLE */ 
  ::-webkit-scrollbar { 
     width: 5px;
+    height: 5px;
   } 
 
   ::-webkit-scrollbar-thumb  { 
@@ -75,13 +76,25 @@ main{
     visibility:  visible;
   }
 
+  .song-section:hover::-webkit-scrollbar-thumb  { 
+    visibility:  visible;
+  }
+
+  .category-menu:hover::-webkit-scrollbar-thumb  { 
+    visibility:  visible;
+  }
+
+  ::-webkit-scrollbar-corner {
+      display: none;
+  }
+
 /* ----- BARRA DEI COMANDI ----- */
 .cmd-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 8px;
-    gap: 8px;
+    gap: 20px;
 }
 
 /* SEZIONE DI SINISTRA - CMD__WIDGET CMD_INFO */
@@ -151,6 +164,8 @@ main{
     flex-direction: column;
     align-items: center;
     gap: 5px;
+    flex-grow: 1;
+    max-width: 1000px;
 }
 
 .cmd-main__audio {
@@ -183,7 +198,7 @@ main{
 .cmd-main__timebar {
     display: flex;
     align-items: center;
-    width: 35vw;
+    width: 100%;
     gap: 10px;
     color: white;
     padding: 5px 0;
@@ -455,6 +470,10 @@ main{
 }
 
 /* MUSIC WRAPPER  */
+.main-song-wrapper {
+    padding: 20px;
+}
+
 .category-menu {
     color: #808080;
     text-transform: uppercase;
@@ -462,8 +481,11 @@ main{
     justify-content: center;
     align-items: center;
     gap: 15px;
-    flex-wrap: wrap;
-    padding: 0 5px;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    position: relative;
+    width: calc(100vw - 270px);
+    padding-bottom: 15px;
 }
 
 .category-name {
@@ -505,15 +527,18 @@ main{
 }
 
 .song-section-wrapper {
-    padding: 20px 20px;
+    padding: 20px 0px;
 }
 
 .song-section {
     display: flex;
     gap: 0px 1%;
     justify-content: flex-start;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     padding: 25px 0;
+    overflow: scroll;
+    position: relative;
+    width: calc(100vw - 270px); 
 }
 
 .song-section-title {
@@ -530,8 +555,8 @@ main{
 /* SONG CARD */
 .song-card-wrapper {
     width: calc(93% / 8);
-    padding: 5px 5px;
     position: relative;
+    flex-shrink: 0;
 }
 
 .song-card-wrapper:hover {
@@ -564,7 +589,7 @@ main{
     white-space: nowrap;
 }
 
-.song-card-title:hover .song-card-artist {
+.song-card-title:hover + .song-card-artist {
     overflow: visible;
     text-overflow: unset;
     white-space: normal;
